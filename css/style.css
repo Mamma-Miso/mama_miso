@@ -1,0 +1,43 @@
+/*************** CUSTOM PROPERTIES ***************/
+
+:root {
+  /* FONTS */
+  --font-h1: "Lilita One", sans-serif;
+  --font-h2: "Lalezar", sans-serif;
+  --font-p: "Zen Kaku Gothic New", sans-serif;
+  --font-cta: "Zen Kaku Gothic New", sans-serif;
+  --font-btn: "Zen Kaku Gothic New", sans-serif;
+
+  --font-h1-size: 2rem;
+  --font-h2-size: 1.5rem;
+  --font-p-size: 1rem;
+
+  --font-weight: 400;
+  --font-p-weight: 700;
+
+  --letter-spacing: 0%;
+
+  /* FARVER */
+  --color-blaa: #2c65d0;
+  --color-roed: #e71d21;
+  --color-pink: #f4b0bd;
+  --color-gul: #eefa30;
+  --color-groen: #27965d;
+  --color-beige: #f9f2e2;
+  --color-sort: #161616;
+
+  --border-radius: 40px;
+  --box-shadow: #27965d 0px 10px 20px;
+}
+
+/********************* RESET *********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
