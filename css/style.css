@@ -42,7 +42,11 @@ img {
   max-width: 100%;
 }
 /******************** header *****************/
-
+header {
+  background-color: var(--color-pink);
+  width: 100%;
+  overflow: hidden;
+}
 .logo {
   width: 45%;
   margin: 25px;
@@ -52,7 +56,7 @@ img {
   display: none;
 }
 
-/* burger meny */
+/***** burger meny *****/
 .burger {
   position: absolute;
   top: 40px;
@@ -75,10 +79,43 @@ img {
 nav.active .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-block: 50px;
+  align-items: flex-start;
+  padding: 30px;
+  width: 100%;
+  gap: 20px;
   background-color: var(--color-pink);
-  border: solid 2px var(--color-pink);
+  border: solid 0.5px var(--color-roed);
+  font-family: var(--font-p);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-roed);
+}
+
+.menu a:active {
+  color: var(--color-gul);
+}
+
+.link-img-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.recipesikon {
+  gap: 15px;
+}
+
+.searchikon {
+  gap: 13px;
+}
+
+.brugereikon {
+  gap: 8px;
+}
+
+nav.active .menu img {
+  width: 15%;
 }
 
 /* Översta strecket */
@@ -98,3 +135,5 @@ nav.active .menu {
   transform: rotate(-45deg) translate(8px, -7px);
   transition: 0.2s linear;
 }
+
+/*  */
