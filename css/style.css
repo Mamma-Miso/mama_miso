@@ -41,9 +41,60 @@
 img {
   max-width: 100%;
 }
-/******************** index.html *****************/
+/******************** header *****************/
 
 .logo {
-  width: 30%;
+  width: 45%;
   margin: 25px;
+}
+
+.menu {
+  display: none;
+}
+
+/* burger meny */
+.burger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.burger .line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-roed);
+  margin-bottom: 9px;
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+  background-color: var(--color-pink);
+  border: solid 2px var(--color-pink);
+}
+
+/* Översta strecket */
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 7px);
+  transition: 0.2s linear;
+}
+
+/* Mittenstrecket försvinner */
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+/* Nedersta strecket */
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -7px);
+  transition: 0.2s linear;
 }
