@@ -41,3 +41,9 @@
 img {
   max-width: 100%;
 }
+/******************** index.html *****************/
+
+.logo {
+  width: 30%;
+  margin: 25px;
+}
