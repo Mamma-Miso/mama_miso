@@ -60,8 +60,165 @@ body {
   margin: 0;
 }
 
-/***** burger meny *****/
-.burger {
+/*************** HEADER DESKTOP ***************/
+
+.site_header {
+  background-color: var(--color-pink);
+  width: 100%;
+  min-height: 180px;
+  padding: 20px 4%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LOGO */
+.site_header .logo {
+  width: 35%;
+  max-width: 500px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.site_header .logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* NAVIGATION */
+.site_header .main_nav {
+  flex: 1;
+  min-width: 0;
+  align-self: flex-end;
+  padding-bottom: 2px;
+}
+
+.site_header .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: clamp(16px, 2vw, 30px);
+}
+
+.site_header .link-img-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* MENU-TEKST */
+.site_header .menu a {
+  color: var(--color-roed);
+  font-family: var(--font-h2);
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* SKJUL SUPERMARKET- OG RECIPES-IKONER PÅ DESKTOP */
+.site_header .supermarketikon img,
+.site_header .recipesikon img {
+  display: none;
+}
+
+/* SØGE-, PROFIL- OG FAVORITIKONER */
+.site_header .searchikon img,
+.site_header .brugereikon img,
+.site_header .favoritesikon img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* BURGER SKJULT PÅ DESKTOP */
+.site_header .burger {
+  display: none;
+}
+/*************** MOBILE ***************/
+@media (max-width: 700px) {
+  .site_header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    padding: 25px;
+    gap: 0;
+  }
+
+  .site_header .logo {
+    width: 65%;
+    max-width: 350px;
+  }
+
+  .site_header .burger {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    width: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .site_header .burger .line {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-roed);
+    margin-bottom: 9px;
+  }
+
+  .site_header .main_nav {
+    width: 100%;
+  }
+
+  .site_header .menu {
+    display: none;
+  }
+
+  .site_header .main_nav.active .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px 0 0;
+    gap: 20px;
+  }
+
+  .site_header .main_nav.active .menu img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .site_header .main_nav.active .supermarketikon img,
+  .site_header .main_nav.active .recipesikon img {
+    display: block;
+  }
+
+  .site_header .main_nav.active .menu a {
+    font-size: 1.1rem;
+  }
+
+  .site_header .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 7px);
+  }
+
+  .site_header .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .site_header .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -7px);
+  }
+}
+/*** burger meny mobile version****/
+/* .burger {
   position: absolute;
   top: 40px;
   right: 40px;
@@ -69,8 +226,8 @@ body {
   cursor: pointer;
   background-color: transparent;
   border: none;
-}
-
+} */
+/* 
 .burger .line {
   display: block;
   width: 40px;
@@ -78,8 +235,8 @@ body {
   background-color: var(--color-roed);
   margin-bottom: 9px;
   transition: 0.2s linear;
-}
-
+} */
+/* 
 nav.active .menu {
   display: flex;
   flex-direction: column;
@@ -90,55 +247,55 @@ nav.active .menu {
   background-color: var(--color-pink);
   border: solid 0.5px var(--color-roed);
   font-family: var(--font-p);
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: var(--color-roed);
-}
-
+} */
+/* 
 .menu a:active {
   color: var(--color-gul);
-}
+} */
 
-.link-img-container {
+/* .link-img-container {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.recipesikon {
+} */
+/* .recipesikon {
   gap: 15px;
-}
+} */
 
-.searchikon {
+/* .searchikon {
   gap: 13px;
-}
-
+} */
+/* 
 .brugereikon {
   gap: 8px;
 }
 
 nav.active .menu img {
   width: 15%;
-}
+} */
 
 /* Översta strecket */
-.burger.active .line:nth-child(1) {
+/* .burger.active .line:nth-child(1) {
   transform: rotate(45deg) translate(8px, 7px);
   transition: 0.2s linear;
-}
+} */
 
 /* Mittenstrecket försvinner */
-.burger.active .line:nth-child(2) {
+/* .burger.active .line:nth-child(2) {
   opacity: 0;
   transition: 0.15s linear;
-}
+} */
 
 /* Nedersta strecket */
-.burger.active .line:nth-child(3) {
+/* .burger.active .line:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -7px);
   transition: 0.2s linear;
-}
+} */
 
 /*  */
 
