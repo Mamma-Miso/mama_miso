@@ -10,13 +10,212 @@ img {
   max-width: 100%;
 }
 
-/********************* MAIN – FORSIDE *********************/
+/********************* MAIN – FORSIDE DESKTOP *********************/
 
-.intro {
-  background-color: var(--color-beige);
-  padding: 24px;
+/********************* FORSIDE – DESKTOP *********************/
+
+@media (min-width: 701px) {
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .intro {
+    background-color: var(--color-beige);
+    padding: 24px;
+  }
+  .intro h1 {
+    color: var(--color-roed);
+    margin-top: 40px;
+    margin-bottom: 0;
+    line-height: 1;
+    margin-left: 20px;
+  }
+  /* INTRO – DESKTOP */
+
+  .intro_content {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .intro p {
+    color: var(--color-roed);
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .index_basket_green {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: -100px;
+    margin-bottom: 3rem;
+    transform: rotate(8deg);
+  }
+
+  .mamas_recipes,
+  .mamas_ingredients,
+  .mamas_supermarket {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  /*************** MAMA'S RECIPES – DESKTOP ***************/
+  .mamas_recipes {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .recipe_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .recipe_card_link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+  /* CTA-KNAP */
+  .recipe_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  /******* MAMA'S INGREDIENTS DESKTOP ******/
+
+  .mamas_ingredients {
+    position: relative;
+    width: 100%;
+  }
+
+  .index_checked_paper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 1px solid var(--color-roed);
+  }
+
+  .index_asian_ingredients {
+    position: absolute;
+    width: 84%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+  }
+
+  .index_asian_recipe {
+    position: absolute;
+    width: 50%;
+    height: auto;
+
+    top: 10%;
+    left: 30px;
+    z-index: 2;
+  }
+
+  /*************** MAMA'S SUPERMARKET – DESKTOP ***************/
+  .mamas_supermarket {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .supermarket_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .supermarket_card_link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+  /* CTA-KNAP */
+  .supermarket_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  .index_chinese_sign {
+    width: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    transform: rotate(-3deg);
+  }
 }
-
 /*************** FORSIDE – MOBIL ***************/
 
 @media (max-width: 700px) {
