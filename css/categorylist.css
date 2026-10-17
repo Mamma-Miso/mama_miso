@@ -42,7 +42,7 @@
 
   /**** GRAFISK ELEMENT ***/
   .ikon_recipe {
-    width: 30%;
+    width: 20%;
     display: block;
     margin-left: auto;
     margin-right: 15%;
@@ -272,19 +272,19 @@
 
   /**** GRAFISK ELEMENT ***/
   .grafisk_ikon_cat_1 {
-    width: 20%;
+    width: 10%;
     display: block;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 3rem;
     margin-bottom: 3rem;
     transform: rotate(-15deg);
   }
 
   .grafisk_ikon_cat_2 {
-    width: 20%;
+    width: 10%;
     display: block;
     margin-left: 1000px;
-    margin-top: -10rem;
+    margin-top: -6rem;
     margin-bottom: 3rem;
     transform: rotate(15deg);
   }
