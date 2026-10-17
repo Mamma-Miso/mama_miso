@@ -255,6 +255,14 @@ body {
   padding: 24px 48px;
 }
 
+/*************** FORSIDE – MOBIL ***************/
+
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
+
 /*** STYLING AF FOOTER ***/
 
 /**STYLING AF FOOTER DESKTOP **/

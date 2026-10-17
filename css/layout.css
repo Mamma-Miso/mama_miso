@@ -9,3 +9,186 @@
 img {
   max-width: 100%;
 }
+
+/********************* MAIN – FORSIDE *********************/
+
+.intro {
+  background-color: var(--color-beige);
+  padding: 24px;
+}
+
+/*************** FORSIDE – MOBIL ***************/
+
+@media (max-width: 700px) {
+  /* FORSIDE – OVERSKRIFT OG BRØDTEKST */
+
+  .intro h1 {
+    color: var(--color-roed);
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    color: var(--color-roed);
+    width: 300px;
+  }
+
+  .index_basket_green {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    transform: rotate(8deg);
+  }
+
+  /*************** MAMA'S RECIPES – MOBIL ***************/
+  .mamas_recipes {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .recipe_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .recipe_card_link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+  /* CTA-KNAP */
+  .recipe_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  /******* MAMA'S INGREDIENTS MOBIL ******/
+
+  .mamas_ingredients {
+    position: relative;
+    width: 100%;
+  }
+
+  .index_checked_paper {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 1px solid var(--color-roed);
+    margin-inline: 5px;
+    margin-block: 20px;
+  }
+  .index_asian_ingredients {
+    position: absolute;
+    width: 84%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+  }
+
+  .index_asian_recipe {
+    position: absolute;
+    width: 50%;
+    height: auto;
+
+    top: 10%;
+    left: 30px;
+    z-index: 2;
+  }
+
+  /*************** MAMA'S SUPERMARKET – MOBIL ***************/
+  .mamas_supermarket {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .supermarket_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .supermarket_card_link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+  /* CTA-KNAP */
+  .supermarket_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  .index_chinese_sign {
+    width: 35%;
+    display: block;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    transform: rotate(-3deg);
+  }
+}
