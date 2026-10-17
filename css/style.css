@@ -169,7 +169,7 @@ body {
 .site_header .burger {
   display: none;
 }
-/*************** MOBILE ***************/
+/*************** STYLING HEADER MOBILE ***************/
 @media (max-width: 700px) {
   .site_header {
     position: relative;
@@ -246,20 +246,6 @@ body {
 
   .site_header .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -7px);
-  }
-}
-
-/****** STYLING AF MAIN ****/
-.intro {
-  background-color: var(--color-beige);
-  padding: 24px 48px;
-}
-
-/*************** FORSIDE – MOBIL ***************/
-
-@media (max-width: 700px) {
-  .intro h1 {
-    font-size: 2rem;
   }
 }
 
@@ -355,7 +341,7 @@ body {
   }
 }
 
-/************* OPSKRIFT-LISTE **************/
+/************* OPSKRIFT-LISTE RUNI **************/
 
 .recipe_list_container {
   display: grid;

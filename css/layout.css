@@ -219,17 +219,24 @@ img {
 /*************** FORSIDE – MOBIL ***************/
 
 @media (max-width: 700px) {
-  /* FORSIDE – OVERSKRIFT OG BRØDTEKST */
+  /****** STYLING AF MAIN ****/
+  .intro {
+    background-color: var(--color-beige);
+    padding: 24px 48px;
+  }
 
+  /*************** FORSIDE – MOBIL ***************/
+  /* FORSIDE – OVERSKRIFT OG BRØDTEKST */
   .intro h1 {
     color: var(--color-roed);
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 2rem;
   }
 
   .intro p {
     color: var(--color-roed);
-    width: 300px;
+    width: 100%;
   }
 
   .index_basket_green {

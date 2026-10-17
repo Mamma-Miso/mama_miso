@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
 
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/layout.css" />
-  <link rel="stylesheet" href="categorylist.css">
+  <link rel="stylesheet" href="/css/categorylist.css" />
 
   <script src="/js/categorylist.js" defer></script>
 
@@ -20,9 +21,6 @@
     rel="stylesheet" />
 </head>
 
-<body></body>
-
-</html>
 
 <body>
 
@@ -69,42 +67,54 @@
       <span class="line"></span>
     </button>
   </header>
-  <main>
-    <div class="top_container_categories">
-      <h1>MAMA'S RECIPE CATEGORIES.</h1>
+
+
+
+  <main class="intro_categprylist">
+    <div class="intro_cat">
+      <h1>MAMA'S CATEGORIES.</h1>
       <p>From quick lunches to delicious dinners,
         sweet treats and refreshing drinks. Exp-
         lore Mama’s recipe universe, find your
         next favourite and get all the ingredients by one click. Pick up yourself or get delivered straight to your
         door.
       </p>
-      <img src="imgs/ikon_recipe.png" alt="Grafisk element af opskrift">
+      <img class="ikon_recipe" src="imgs/ikon_recipe.png" alt="">
     </div>
 
     <section class="grid_categories">
+
       <div class="lunch_cat">
-
-        <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad">
-        <a href="lunch.html">LUNCH</a>
+        <a href="lunch.html" class="lunch_card_link">
+          <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad" />
+          <span class="lunch_card_cta">LUNCH</span>
+        </a>
       </div>
-
 
       <div class="dinner_cat">
-
-        <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad">
-        <a href="dinner.html">DINNER</a>
+        <a href="dinner.html" class="dinner_card_link">
+          <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad" />
+          <span class="dinner_card_cta">DINNER</span>
+        </a>
       </div>
+
 
       <div class="dessert_cat">
-        <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad">
-        <a href="dessert.html">DESSERT</a>
+        <a href="dessert.html" class="dessert_card_link">
+          <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad" />
+          <span class="dessert_card_cta">DESSERT</span>
+        </a>
       </div>
+
 
       <div class="beverage_cat">
-        <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad">
-        <a href="beverage.html">BEVERAGE</a>
-
+        <a href="beverage.html" class="beverage_card_link">
+          <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad" />
+          <span class="beverage_card_cta">BEVERAGE</span>
+        </a>
       </div>
+
+
 
     </section>
 
