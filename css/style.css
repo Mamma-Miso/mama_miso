@@ -250,7 +250,7 @@ body {
 }
 
 /****** STYLING AF MAIN ****/
-.main_content {
+.intro {
   background-color: var(--color-beige);
   padding: 24px 48px;
 }
