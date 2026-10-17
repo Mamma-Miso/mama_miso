@@ -1,8 +1,300 @@
+/********************* MAIN – CATEGORYLIST DESKTOP *********************/
+
+@media (min-width: 701px) {
+  /****** STYLING AF MAIN ****/
+  .grid_categories {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 500px));
+    justify-content: center;
+    gap: 32px 40px;
+  }
+
+  .intro_categorylist {
+    background-color: var(--color-beige);
+    padding: 24px 48px;
+  }
+  /* FORSIDE – OVERSKRIFT OG BRØDTEKST DESKTOP */
+  .intro_cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+  }
+
+  .intro_cat h1 {
+    color: var(--color-roed);
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    max-width: 900px;
+  }
+
+  .intro_cat p {
+    color: var(--color-roed);
+    width: 100%;
+  }
+
+  .ikon_recipe {
+    width: 35%;
+    justify-self: end;
+    margin-right: 8%;
+    transform: rotate(8deg);
+  }
+
+  /**** GRAFISK ELEMENT ***/
+  .ikon_recipe {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: 15%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    transform: rotate(8deg);
+  }
+
+  /*************** LUNCH – DESKTOP ***************/
+  .lunch_cat {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .lunch_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  .lunch_card_link img {
+    display: block;
+    width: 110%;
+    height: 110%;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+  }
+
+  /* CTA-KNAP */
+  .lunch_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  /*************** DINNER – DESKTOP ***************/
+
+  .dinner_cat {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+
+  .dinner_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  .dinner_card_link img {
+    display: block;
+    width: 110%;
+    height: 110%;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+  }
+
+  /* CTA-KNAP */
+  .dinner_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+  /*************** DESSERT – DESKTOP ***************/
+  .dessert_cat {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+  }
+  .dessert_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  .dessert_card_link img {
+    display: block;
+    width: 110%;
+    height: 110%;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+  }
+
+  /* CTA-KNAP */
+  .dessert_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+  /*************** BEVERAGE – DESKTOP ***************/
+  .beverage_cat {
+    background-color: var(--color-groen);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 60px;
+    padding: 24px;
+    min-height: 0;
+    margin-bottom: 20px;
+  }
+
+  .beverage_card_link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  .beverage_card_link img {
+    display: block;
+    width: 110%;
+    height: 110%;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+  }
+
+  /* CTA-KNAP */
+  .beverage_card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+
+    background-color: var(--color-moerkgroen);
+    color: var(--color-hvid);
+
+    font-family: var(--font-h2);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  /**** GRAFISK ELEMENT ***/
+  .grafisk_ikon_cat_1 {
+    width: 20%;
+    display: block;
+    margin-left: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    transform: rotate(-15deg);
+  }
+
+  .grafisk_ikon_cat_2 {
+    width: 20%;
+    display: block;
+    margin-left: 1000px;
+    margin-top: -10rem;
+    margin-bottom: 3rem;
+    transform: rotate(15deg);
+  }
+}
+
 /*************** CATEGORY – MOBIL ***************/
 
 @media (max-width: 700px) {
   /****** STYLING AF MAIN ****/
-  .intro_categprylist {
+  .intro_categorylist {
     background-color: var(--color-beige);
     padding: 24px 48px;
   }
