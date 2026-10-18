@@ -1,0 +1,101 @@
+/********************* MAIN – CATEGORYLIST DESKTOP *********************/
+
+@media (min-width: 701px) {
+  /****** STYLING AF MAIN ****/
+
+  .intro_supermarket {
+    background-color: var(--color-beige);
+    padding: 24px 48px;
+  }
+  /* FORSIDE – OVERSKRIFT OG BRØDTEKST */
+
+  .intro_supermarket h1 {
+    color: var(--color-roed);
+    /* font-size: 3.5rem; */
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .intro_supermarket p {
+    color: var(--color-roed);
+    width: 65%;
+    margin-left: 20px;
+  }
+
+  /**** GRAFISK ELEMENT ***/
+  .grafisk_ikon_supermarket_1 {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    transform: rotate(8deg);
+  }
+
+  .grafisk_ikon_supermarket_2 {
+    width: 8%;
+    display: auto;
+    margin-right: 30px;
+  }
+
+  .supermarket_image {
+    display: block;
+    width: 60%;
+    margin-left: 150px;
+    margin-top: -70px;
+    border-radius: 20px;
+  }
+}
+
+/*************** SUPERMARKET STYLING – MOBIL ***************/
+
+@media (max-width: 700px) {
+  .intro_supermarket {
+    background-color: var(--color-beige);
+    padding: 24px 48px;
+  }
+  /* FORSIDE – OVERSKRIFT OG BRØDTEKST */
+
+  .intro_supermarket h1 {
+    color: var(--color-roed);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  .intro_supermarket p {
+    color: var(--color-roed);
+    width: 100%;
+  }
+
+  /**** GRAFISK ELEMENT ***/
+  .grafisk_ikon_supermarket_1 {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    transform: rotate(8deg);
+  }
+
+  .supermarket_image {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .grafisk_ikon_supermarket_2 {
+    width: 15%;
+    display: block;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 20px;
+  }
+}
