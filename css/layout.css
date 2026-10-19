@@ -396,3 +396,12 @@ img {
     transform: rotate(-3deg);
   }
 }
+
+/*********** LISTVIEW ***********/
+/************ DESKTOP ***********/
+
+@media (min-width: 700px) {
+  .main_content .listview {
+    display: grid;
+  }
+}

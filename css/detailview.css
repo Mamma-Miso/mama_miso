@@ -1,0 +1,134 @@
+/*************** CUSTOM PROPERTIES ***************/
+
+:root {
+  /* FONTS */
+  --font-h1: "Lilita One", sans-serif;
+  --font-h2: "Lalezar", sans-serif;
+  --font-h3: "Zen Kaku Gothic New", sans-serif;
+  --font-p: "Zen Kaku Gothic New", sans-serif;
+  --font-cta: "Zen Kaku Gothic New", sans-serif;
+  --font-btn: "Zen Kaku Gothic New", sans-serif;
+
+  --font-h1-size: 3.5rem;
+  --font-h1-size-small: 2.5rem;
+  --font-h2-size: 2rem;
+  --font-p-size: 1rem;
+
+  --font-weight: 400;
+  --font-p-weight: 500;
+
+  --letter-spacing: 0%;
+
+  /* FARVER */
+  --color-blaa: #2c65d0;
+  --color-roed: #e71d21;
+  --color-pink: #f8d5db;
+  --color-gul: #eefa30;
+  --color-groen: #27965d;
+  --color-moerkgroen: #2f684b;
+  --color-beige: #f9f2e2;
+  --color-sort: #161616;
+  --color-hvid: #ffffff;
+
+  --border-radius: 40px;
+  --box-shadow: #27965d 0px 10px 20px;
+}
+
+/*************************** OPSKRIFT *************************/
+/******************* MOBIL ****************/
+
+.recipe_description {
+  margin-block: 50px;
+}
+
+.recipe_description h1 {
+  font-size: var(--font-h1-size-small);
+  margin-bottom: 50px;
+}
+
+.recipe_description img {
+  background-color: var(--color-groen);
+  padding: 25px;
+  border-radius: 75px;
+}
+
+.recipe_description .description {
+  margin-top: 25px;
+}
+
+li {
+  font-family: var(--font-p);
+  font-size: var(--font-p-size);
+  font-weight: var(--font-p-weight);
+}
+
+.description,
+.ingredients {
+  list-style: none;
+  padding: 0;
+}
+
+.description li,
+.ingredients li {
+  margin-bottom: 10px;
+}
+
+.description li:last-child,
+.ingredients li:last-child {
+  margin-bottom: 0;
+}
+
+.recipe_ingredients {
+  margin-block: 50px;
+}
+
+.ingredients label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.ingredients input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333;
+  background-color: white;
+  cursor: pointer;
+}
+
+.ingredients input[type="checkbox"]:checked {
+  background-color: var(--color-pink);
+  position: relative;
+}
+
+.ingredients input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: red;
+  font-size: 16px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+}
+
+.recipe_ingredients .btn {
+  display: inline;
+  justify-self: center;
+  font-size: 1.25rem;
+  background-color: var(--color-moerkgroen);
+  color: var(--color-hvid);
+  padding: 10px 40px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #e71d21;
+}
+
+.recipe_method {
+  margin-block: 50px;
+}
+/***************** DESKTOP ****************/

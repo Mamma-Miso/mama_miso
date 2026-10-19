@@ -1,0 +1,119 @@
+/*************** CUSTOM PROPERTIES ***************/
+
+:root {
+  /* FONTS */
+  --font-h1: "Lilita One", sans-serif;
+  --font-h2: "Lalezar", sans-serif;
+  --font-h3: "Zen Kaku Gothic New", sans-serif;
+  --font-p: "Zen Kaku Gothic New", sans-serif;
+  --font-cta: "Zen Kaku Gothic New", sans-serif;
+  --font-btn: "Zen Kaku Gothic New", sans-serif;
+
+  --font-h1-size: 3.5rem;
+  --font-h1-size-small: 2.5rem;
+  --font-h2-size: 2rem;
+  --font-p-size: 1rem;
+
+  --font-weight: 400;
+  --font-p-weight: 500;
+
+  --letter-spacing: 0%;
+
+  /* FARVER */
+  --color-blaa: #2c65d0;
+  --color-roed: #e71d21;
+  --color-pink: #f8d5db;
+  --color-gul: #eefa30;
+  --color-groen: #27965d;
+  --color-moerkgroen: #2f684b;
+  --color-beige: #f9f2e2;
+  --color-sort: #161616;
+  --color-hvid: #ffffff;
+
+  --border-radius: 40px;
+  --box-shadow: #27965d 0px 10px 20px;
+}
+
+/*********************** OPSKRIFT-LISTE ************************/
+/****************** MOBIL ******************/
+
+.list_intro {
+  color: var(--color-roed);
+  margin-block: 50px;
+}
+
+.recipe_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+.list_card {
+  display: inline-block;
+  background-color: var(--color-groen);
+  padding: 25px;
+  border-radius: 75px;
+}
+
+.card_img img {
+  margin-bottom: -4px;
+  border-radius: 50px 50px 0 0;
+}
+
+.card_info {
+  background-color: var(--color-beige);
+  padding: 10px 15px 20px 15px;
+  border-radius: 0 0 50px 50px;
+}
+
+.recipe_name {
+  font-family: var(--font-h2);
+  font-size: var(--font-h2-size);
+  color: var(--color-roed);
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recipe_details {
+  display: flex;
+  column-gap: 20px;
+}
+
+.recipe_details .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe_details .info img {
+  width: 25px;
+}
+
+.recipe_details p {
+  font-size: 10px;
+}
+
+.btn {
+  display: block;
+  justify-self: center;
+  font-size: 1.25rem;
+  background-color: var(--color-moerkgroen);
+  color: var(--color-hvid);
+  padding: 10px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #e71d21;
+}
+
+/***************** DESKTOP ****************/
+
+@media (min-width: 700px) {
+  .list_intro {
+    width: 33%;
+  }
+}

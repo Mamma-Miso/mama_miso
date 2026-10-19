@@ -10,11 +10,12 @@
   --font-btn: "Zen Kaku Gothic New", sans-serif;
 
   --font-h1-size: 3.5rem;
-  --font-h2-size: 2.5rem;
+  --font-h1-size-small: 2.5rem;
+  --font-h2-size: 2rem;
   --font-p-size: 1rem;
 
   --font-weight: 400;
-  --font-p-weight: 700;
+  --font-p-weight: 500;
 
   --letter-spacing: 0%;
 
@@ -50,11 +51,14 @@ img {
 h1 {
   font-family: var(--font-h1);
   font-size: var(--font-h1-size);
+  color: var(--color-roed);
+  margin-bottom: 10px;
 }
 
 h2 {
   font-family: var(--font-h2);
   font-size: var(--font-h2-size);
+  color: var(--color-roed);
 }
 
 h3 {
@@ -63,6 +67,9 @@ h3 {
 
 p {
   font-family: var(--font-p);
+  font-weight: var(--font-p-weight);
+  line-height: 150%;
+  text-wrap: pretty;
 }
 
 .btn {
@@ -247,6 +254,12 @@ body {
   .site_header .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -7px);
   }
+}
+
+/****** STYLING AF MAIN ****/
+.main_content {
+  background-color: var(--color-beige);
+  padding: 24px 48px;
 }
 
 /*** STYLING AF FOOTER ***/
