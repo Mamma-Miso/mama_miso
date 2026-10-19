@@ -44,6 +44,7 @@
 .recipe_description h1 {
   font-size: var(--font-h1-size-small);
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
 .recipe_description img {
@@ -59,7 +60,6 @@
 li {
   font-family: var(--font-p);
   font-size: var(--font-p-size);
-  font-weight: var(--font-p-weight);
 }
 
 .description,
@@ -69,12 +69,14 @@ li {
 }
 
 .description li,
-.ingredients li {
+.ingredients li,
+.instructions li {
   margin-bottom: 10px;
 }
 
 .description li:last-child,
-.ingredients li:last-child {
+.ingredients li:last-child,
+.instructions li:last-child {
   margin-bottom: 0;
 }
 
@@ -121,7 +123,7 @@ li {
   padding: 10px 40px;
   border: none;
   border-radius: 50px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .btn:hover {
@@ -131,4 +133,36 @@ li {
 .recipe_method {
   margin-block: 50px;
 }
+
+.recipe_method ol {
+  padding-left: 0;
+  list-style-position: inside;
+}
 /***************** DESKTOP ****************/
+
+@media (min-width: 700px) {
+  #layout {
+    margin-top: 0;
+  }
+
+  .main_content.listview {
+    padding-inline: 200px;
+  }
+
+  .recipe_description h1 {
+    font-size: var(--font-h1-size);
+  }
+
+  .recipe_description img {
+    max-width: 500px;
+    justify-self: center;
+  }
+
+  .recipe_method {
+    justify-self: center;
+  }
+
+  .recipe_ingredients {
+    justify-self: center;
+  }
+}

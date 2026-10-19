@@ -1,10 +1,13 @@
+"use strict";
+
 const params = new URLSearchParams(window.location.search);
 const selectedID = params.get("id");
-console.log("selectedID", selectedID);
 
-const detailURL = `https://kea-alt-del.dk/t7/api/products/${selectedID}`;
+const detailURL = `https://dummyjson.com/recipes/${selectedID}`;
 
-const detailList = document.querySelector(".product_page_container");
+const descriptionList = document.querySelector(".recipe_description");
+const ingredientsList = document.querySelector(".ingredients");
+const instructionsList = document.querySelector(".instructions");
 
 function getData(url) {
   fetch(url).then((response) => {
@@ -15,42 +18,38 @@ function getData(url) {
 }
 
 function showDetails(details) {
-  detailList.innerHTML = "";
+  descriptionList.innerHTML = "";
 
-  detailList.innerHTML += `<img
-            src="https://kea-alt-del.dk/t7/images/webp/640/${details.id}.webp"
-            alt="${details.productdisplayname}"
-          />
-          <div class="product_info ${details.soldout ? "soldout" : ""} ${details.discount ? "discount" : ""}">
-            <div>
-              <h2>${details.productdisplayname}</h2>
-              <p class="articletype_brandname">${details.articletype} | ${details.brandname}</p>
-            </div>
-            <div>
-              <p class="original_price">${details.price + " kr."}</p>
-              <div class="new_price">
-                <p>${details.discount ? getDiscountPrice(details.price, details.discount) + " kr." : ""}</p>
-                <p class="discount_tag">${details.discount ? " -" + details.discount + "%" : ""}</p>
-              </div>
-            </div>
-            <div class="info">
-              <p><b>Colour:</b><br />${details.basecolour}</p>
-            </div>
-          </div>
-          <div class="size">
-            <form action="">
-              <label for="size">Vælg størrelse:<br /><br /></label>
-              <select name="size" id="size">
-                <option value="xs">XS</option>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-              </select>
-              <br /><br />
-              <input type="submit" value="Tilføj til kurv" />
-            </form>
-          </div>`;
+  descriptionList.innerHTML += `<h1>${details.name}</h1>
+    <img
+      src="${details.image}"
+      alt="${details.name}"
+    />
+    <ul id="layout" class="description">
+      <li><b>Prep time:</b> ${details.prepTimeMinutes}</li>
+      <li><b>Cook time:</b> ${details.cookTimeMinutes}</li>
+      <li><b>Servings:</b> ${details.servings}</li>
+      <li><b>Difficulty:</b> ${details.difficulty}</li>
+      <li><b>Cuisine:</b> ${details.cuisine}</li>
+      <li><b>Calories pr. serving:</b> ${details.caloriesPerServing}</li>
+    </ul>`;
+
+  ingredientsList.innerHTML = "";
+
+  details.ingredients.forEach((ingredient) => {
+    ingredientsList.innerHTML += `<li>
+      <label>
+        <input type="checkbox" />
+        ${ingredient}
+      </label>
+    </li>`;
+  });
+
+  instructionsList.innerHTML = "";
+
+  details.instructions.forEach((instruction) => {
+    instructionsList.innerHTML += `<li>${instruction}</li>`;
+  });
 }
 
 getData(detailURL);

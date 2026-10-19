@@ -1,7 +1,9 @@
 "use strict";
 
-const lunchUrl = `https://dummyjson.com/recipes/meal-type/lunch`;
-const lunchList = document.querySelector(".lunch_list_container");
+const recipeList = document.querySelector("[data-meal-type]");
+const mealType = recipeList.dataset.mealType;
+
+const recipeUrl = `https://dummyjson.com/recipes/meal-type/${mealType}`;
 
 function getData(url) {
   fetch(url).then((response) =>
@@ -9,7 +11,7 @@ function getData(url) {
   );
 
   function showRecipes(data) {
-    lunchList.innerHTML = "";
+    recipeList.innerHTML = "";
 
     const filteredRecipes = data.recipes.filter((recipe) =>
       recipe.tags.includes("Asian"),
@@ -18,7 +20,7 @@ function getData(url) {
     filteredRecipes.forEach((recipe) => {
       const totalTime = recipe.prepTimeMinutes + recipe.cookTimeMinutes;
 
-      lunchList.innerHTML += `<article class="list_card">
+      recipeList.innerHTML += `<article class="list_card">
           <div class="card_img">
             <img src="${recipe.image}" alt="${recipe.name}" />
           </div>
@@ -47,4 +49,4 @@ function getData(url) {
   }
 }
 
-getData(lunchUrl);
+getData(recipeUrl);

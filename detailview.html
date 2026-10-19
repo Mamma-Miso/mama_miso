@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/detailview.css" />
 
     <script src="/js/detailview.js" defer></script>
+    <script src="/js/burgermenu.js" defer></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -66,12 +67,12 @@
 
     <main class="main_content listview">
       <div class="recipe_description">
-        <h1>RECIPE NAME</h1>
+        <h1 class="name">RECIPE NAME</h1>
         <img
           src="https://cdn.dummyjson.com/recipe-images/2.webp"
           alt="placeholder"
         />
-        <ul class="description">
+        <ul id="layout" class="description">
           <li><b>Prep time:</b></li>
           <li><b>Cook time:</b></li>
           <li><b>Servings</b></li>
@@ -80,35 +81,37 @@
           <li><b>Calories pr. serving:</b></li>
         </ul>
       </div>
-      <div class="recipe_ingredients">
-        <h2>Ingredients</h2>
-        <ul class="ingredients">
-          <li>
-            <label>
-              <input type="checkbox" />
-              Ingredient
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" />
-              Ingredient
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" />
-              Ingredient
-            </label>
-          </li>
-        </ul>
-        <button class="btn">Add products to basket</button>
-      </div>
-      <div class="recipe_method">
-        <h2>Method</h2>
-        <ol>
-          <li>Instructions</li>
-        </ol>
+      <div class="bottom_section">
+        <div class="recipe_ingredients">
+          <h2>Ingredients</h2>
+          <ul class="ingredients">
+            <li>
+              <label>
+                <input type="checkbox" />
+                Ingredient
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                Ingredient
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                Ingredient
+              </label>
+            </li>
+          </ul>
+          <button class="btn">Add products to basket</button>
+        </div>
+        <div class="recipe_method">
+          <h2>Method</h2>
+          <ol class="instructions">
+            <li>Instructions</li>
+          </ol>
+        </div>
       </div>
     </main>
 

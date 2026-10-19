@@ -46,7 +46,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 40px;
-  row-gap: 20px;
+  row-gap: 50px;
 }
 
 .list_card {
@@ -115,5 +115,14 @@
 @media (min-width: 700px) {
   .list_intro {
     width: 33%;
+  }
+
+  .recipe_list_container {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 350px));
+    justify-content: space-evenly;
+  }
+
+  .beverage_list_container {
+    justify-content: space-between;
   }
 }

@@ -30,17 +30,32 @@ function showData(data) {
 
   // Filtrerer asiatiske opskrifter
   const asianRecipes = recipes.filter((recipe) => {
-    return recipe.tags.includes("Asian") || recipe.tags.includes("Japanese") || recipe.tags.includes("Korean") || recipe.tags.includes("Thai") || recipe.tags.includes("Chinese") || recipe.tags.includes("Vietnamese");
+    return (
+      recipe.tags.includes("Asian") ||
+      recipe.tags.includes("Japanese") ||
+      recipe.tags.includes("Korean") ||
+      recipe.tags.includes("Thai") ||
+      recipe.tags.includes("Chinese") ||
+      recipe.tags.includes("Vietnamese")
+    );
   });
 
   // Filtrerer opskrifter efter kategori
-  const lunchRecipes = asianRecipes.filter((recipe) => recipe.mealType.includes("Lunch"));
+  const lunchRecipes = asianRecipes.filter((recipe) =>
+    recipe.mealType.includes("Lunch"),
+  );
 
-  const dinnerRecipes = asianRecipes.filter((recipe) => recipe.mealType.includes("Dinner"));
+  const dinnerRecipes = asianRecipes.filter((recipe) =>
+    recipe.mealType.includes("Dinner"),
+  );
 
-  const dessertRecipes = asianRecipes.filter((recipe) => recipe.mealType.includes("Dessert"));
+  const dessertRecipes = asianRecipes.filter((recipe) =>
+    recipe.mealType.includes("Dessert"),
+  );
 
-  const beverageRecipes = asianRecipes.filter((recipe) => recipe.mealType.includes("Beverage"));
+  const beverageRecipes = asianRecipes.filter((recipe) =>
+    recipe.mealType.includes("Beverage"),
+  );
 
   console.log("Asiatiske opskrifter:", asianRecipes.length);
   console.log("Lunch:", lunchRecipes.length);

@@ -401,7 +401,36 @@ img {
 /************ DESKTOP ***********/
 
 @media (min-width: 700px) {
-  .main_content .listview {
+  .recipe_description {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 40px;
+  }
+
+  .recipe_description img {
+    grid-column: 1;
+    grid-row: 1/3;
+    order: -1;
+  }
+
+  .recipe_description h1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .recipe_description .description {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .bottom_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  .recipe_method {
+    order: -1;
   }
 }

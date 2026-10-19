@@ -59,6 +59,7 @@ h2 {
   font-family: var(--font-h2);
   font-size: var(--font-h2-size);
   color: var(--color-roed);
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -354,68 +355,87 @@ body {
   }
 }
 
-/************* OPSKRIFT-LISTE RUNI **************/
+/*********** NYHEDSBRÆV POP-UP ***********/
 
-.recipe_list_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  column-gap: 40px;
-  row-gap: 20px;
-}
-
-.list_card {
-  display: inline-block;
-  background-color: var(--color-groen);
-  padding: 40px;
-  border-radius: 75px;
-}
-
-.card_img img {
-  width: auto;
-  height: 250px;
-  margin-bottom: -4px;
-  border-radius: 50px 50px 0 0;
-}
-
-.card_info {
-  background-color: var(--color-beige);
-  padding: 10px 15px 20px 15px;
-  border-radius: 0 0 50px 50px;
-}
-
-.recipe_name {
-  font-family: var(--font-h2);
-  font-size: var(--font-h2-size);
-  color: var(--color-roed);
-  margin-bottom: 10px;
-}
-
-.recipe_details {
+.popup_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 60%);
   display: flex;
-  column-gap: 20px;
-}
-
-.recipe_details .info {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
-.recipe_details .info img {
-  width: 25px;
+.popup {
+  position: relative;
+  background: #f8f1df;
+  padding: 100px 40px;
+  border-radius: 40px;
+  border: 10px solid var(--color-groen);
+  max-width: 500px;
+  margin-inline: 30px;
+  text-align: center;
 }
 
-.recipe_details p {
-  font-size: 10px;
+@media (min-width: 700px) {
+  .popup {
+    max-width: 600px;
+  }
 }
 
-.btn {
+.popup_close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.popup_close:hover {
+  color: var(--color-roed);
+}
+
+/*********** FORM ***********/
+
+input {
+  color: black;
+  background-color: var(--color-hvid);
+  border: solid, 3px, var(--color-blaa);
+  border-radius: 10px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.form_group label {
+  font-family: var(--font-p);
+  font-weight: var(--font-p-weight);
+}
+
+#email {
+  width: 75%;
+}
+
+.popup .submit {
   display: block;
   justify-self: center;
   font-size: 1.25rem;
   background-color: var(--color-moerkgroen);
   color: var(--color-hvid);
-  padding: 10px 70px;
+  padding: 10px 40px;
+  border: none;
   border-radius: 50px;
   margin-top: 20px;
+}
+
+.popup .submit:hover {
+  background-color: #e71d21;
+}
+
+.popup .submit:active {
+  scale: 0.98;
 }
