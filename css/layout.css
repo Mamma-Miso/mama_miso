@@ -9,3 +9,12 @@
 img {
   max-width: 100%;
 }
+
+/*********** LISTVIEW ***********/
+/************ DESKTOP ***********/
+
+@media (min-width: 700px) {
+  .main_content .listview {
+    display: grid;
+  }
+}
