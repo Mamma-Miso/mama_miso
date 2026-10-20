@@ -1,193 +1,175 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="robots" content="noindex" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/layout.css" />
+  <meta name="robots" content="noindex" />
 
-    <script src="js/index.js" defer></script>
-    <script src="js/burgermenu.js" defer></script>
-    <script src="js/popup.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lilita+One&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <script src="js/index.js" defer></script>
+  <script src="js/burgermenu.js" defer></script>
+  <script src="js/popup.js" defer></script>
 
-    <title>Forside</title>
-  </head>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lilita+One&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
 
-  <div class="popup_overlay">
-    <div class="popup">
-      <div>
-        <button class="popup_close" aria-label="Close popup">&times;</button>
+  <title>Forside</title>
+</head>
 
-        <h2>Welcome to our recipe universe!</h2>
-        <p>
-          Sign up for our newsletter to never miss the newest recipes and
-          supermarket offers
-        </p>
-      </div>
-      <div class="form">
-        <form id="webform" aria-label="signup for newsletter">
-          <div class="form_group">
-            <label for="email">E-mail</label>
-            <input required type="email" id="email" name="email" />
-          </div>
-        </form>
-        <button type="button" class="btn submit">Submit</button>
-      </div>
+<div class="popup_overlay">
+  <div class="popup">
+    <div>
+      <button class="popup_close" aria-label="Close popup">&times;</button>
+
+      <h2>Welcome to our recipe universe!</h2>
+      <p>
+        Sign up for our newsletter to never miss the newest recipes and
+        supermarket offers
+      </p>
+    </div>
+    <div class="form">
+      <form id="webform" aria-label="signup for newsletter">
+        <div class="form_group">
+          <label for="email">E-mail</label>
+          <input required type="email" id="email" name="email" />
+        </div>
+      </form>
+      <button type="button" class="btn submit">Submit</button>
     </div>
   </div>
+</div>
 
-  <body>
-    <header class="site_header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
+<body>
+  <header class="site_header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
+      </a>
+    </div>
+    <nav class="main_nav">
+      <div class="menu">
+        <div class="link-img-container supermarketikon">
+          <img src="imgs/supermarketikon.svg" alt="kundkorgikon" />
+          <a href="supermarket.html"> Supermarket</a>
+        </div>
+        <div class="link-img-container recipesikon">
+          <img src="imgs/recipesikon.svg" alt="recipesikon" />
+          <a href="categorylist.html">Recipes</a>
+        </div>
+
+        <div class="link-img-container searchikon">
+
+          <img src="imgs/searchikon.svg" alt="" />
+          <a href="index.html" aria-label="Search">Search</a>
+
+        </div>
+
+        <div class="link-img-container brugereikon">
+          <img src="imgs/minprofilikon.svg" alt="" />
+          <a href="index.html" aria-label="My profile">My profile</a>
+
+        </div>
+
+        <div class="link-img-container favoritesikon">
+          <img src="imgs/myfavoritesikon.svg" alt="" />
+          <a href="index.html" aria-label="Favorites">Favorites</a>
+
+        </div>
+      </div>
+    </nav>
+
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+  </header>
+
+  <main class="intro">
+    <h1>DISCOVER RECIPE. CLICK IT. COOK IT.</h1>
+
+    <div class="intro_content">
+      <p>
+        Mama Miso is your go-to Asian supermarket, bringing shopping and
+        cooking together in one place. Explore Mama’s online recipe universe
+        for inspiration, discover new ingredients and learn how to use them in
+        delicious Asian dishes. With just one click, add everything you need
+        to your basket and choose to pick up your order or have it delivered
+        straight to your door.
+      </p>
+
+      <img class="index_basket_green" src="imgs/ikon_basket_green.png" alt="" />
+    </div>
+
+    <section class="grid_1_1_1">
+      <div class="mamas_recipes">
+        <a href="categorylist.html" class="recipe_card_link">
+          <img src="imgs/forside_mamas_recipes_img.webp" alt="" />
+          <span class="recipe_card_cta">Mama's recipes</span>
         </a>
       </div>
-      <nav class="main_nav">
-        <div class="menu">
-          <div class="link-img-container supermarketikon">
-            <img src="imgs/supermarketikon.svg" alt="kundkorgikon" />
-            <a href="supermarket.html"> Supermarket</a>
-          </div>
-          <div class="link-img-container recipesikon">
-            <img src="imgs/recipesikon.svg" alt="recipesikon" />
-            <a href="categorylist.html">Recipes</a>
-          </div>
 
-          <div class="link-img-container searchikon">
-            <a href="index.html" aria-label="Search">
-              <img src="imgs/searchikon.svg" alt="" />
-            </a>
-          </div>
+      <div class="mamas_ingredients">
+        <img class="index_checked_paper" src="imgs/checked_paper_img.webp" alt="" />
+        <img class="index_asian_ingredients" src="imgs/forside_asian_ingredients.webp"
+          alt="A selection of Asian ingredients" />
+        <img class="index_asian_recipe" src="imgs/ikon_asian_recipe.png" alt="" />
+      </div>
 
-          <div class="link-img-container brugereikon">
-            <a href="index.html" aria-label="My profile">
-              <img src="imgs/minprofilikon.svg" alt="" />
-            </a>
-          </div>
+      <div class="mamas_supermarket">
+        <a href="supermarket.html" class="supermarket_card_link">
+          <img src="imgs/forside_mamas_supermarket_img.webp" alt="Products on shelves in Mama Miso's supermarket" />
+          <span class="supermarket_card_cta">Mama's Supermarket</span>
+        </a>
+      </div>
+    </section>
 
-          <div class="link-img-container favoritesikon">
-            <a href="index.html" aria-label="Favorites">
-              <img src="imgs/myfavoritesikon.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </nav>
+    <img class="index_chinese_sign" src="imgs/ikon_chinese_sign.png" alt="" />
+  </main>
 
-      <button class="burger" aria-label="Open menu" aria-expanded="false">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-    </header>
+  <footer class="footer_content">
+    <div class="footer_left_side">
+      <div>
+        <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
+      </div>
 
-    <main class="intro">
-      <h1>DISCOVER RECIPE. CLICK IT. COOK IT.</h1>
+      <div class="footer_contact">
+        <p>Mama Miso</p>
+        <p>Guldbergsgade 22</p>
+        <p>2200 Copenhagen N., Dk</p>
+        <p><strong>Phone: +45 44 66 88 00</strong></p>
+        <p><strong>Opening hours: Mon-Sat 10-18</strong></p>
+      </div>
+    </div>
 
-      <div class="intro_content">
+    <div class="footer_right_side">
+      <div class="about_us">
+        <h3>About us</h3>
         <p>
-          Mama Miso is your go-to Asian supermarket, bringing shopping and
-          cooking together in one place. Explore Mama’s online recipe universe
-          for inspiration, discover new ingredients and learn how to use them in
-          delicious Asian dishes. With just one click, add everything you need
-          to your basket and choose to pick up your order or have it delivered
-          straight to your door.
+          Mama Miso is an Asian supermarket and recipe platform where you can
+          discover new ingredients, find easy recipes and shop everything you
+          need by one click, to cook at home.
         </p>
-
-        <img
-          class="index_basket_green"
-          src="imgs/ikon_basket_green.png"
-          alt=""
-        />
       </div>
 
-      <section class="grid_1_1_1">
-        <div class="mamas_recipes">
-          <a href="categorylist.html" class="recipe_card_link">
-            <img src="imgs/forside_mamas_recipes_img.webp" alt="" />
-            <span class="recipe_card_cta">Mama's recipes</span>
-          </a>
-        </div>
-
-        <div class="mamas_ingredients">
-          <img
-            class="index_checked_paper"
-            src="imgs/checked_paper_img.webp"
-            alt=""
-          />
-          <img
-            class="index_asian_ingredients"
-            src="imgs/forside_asian_ingredients.webp"
-            alt="A selection of Asian ingredients"
-          />
-          <img
-            class="index_asian_recipe"
-            src="imgs/ikon_asian_recipe.png"
-            alt=""
-          />
-        </div>
-
-        <div class="mamas_supermarket">
-          <a href="supermarket.html" class="supermarket_card_link">
-            <img
-              src="imgs/forside_mamas_supermarket_img.webp"
-              alt="Products on shelves in Mama Miso's supermarket"
-            />
-            <span class="supermarket_card_cta">Mama's Supermarket</span>
-          </a>
-        </div>
-      </section>
-
-      <img class="index_chinese_sign" src="imgs/ikon_chinese_sign.png" alt="" />
-    </main>
-
-    <footer class="footer_content">
-      <div class="footer_left_side">
-        <div>
-          <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
-        </div>
-
-        <div class="footer_contact">
-          <p>Mama Miso</p>
-          <p>Guldbergsgade 22</p>
-          <p>2200 Copenhagen N., Dk</p>
-          <p><strong>Phone: +45 44 66 88 00</strong></p>
-          <p><strong>Opening hours: Mon-Sat 10-18</strong></p>
-        </div>
+      <div class="get_in_touch">
+        <h3>Get in touch</h3>
+        <p><strong>Mail: nihao@mamamiso.dk</strong></p>
+        <a href="insta_ikon">
+          <img src="imgs/instaikon.webp" alt="insta_ikon" /></a>
+        <a href="tiktok_ikon">
+          <img src="imgs/tiktokikon.webp" alt="tiktok_ikon" /></a>
       </div>
+    </div>
+  </footer>
+</body>
 
-      <div class="footer_right_side">
-        <div class="about_us">
-          <h3>About us</h3>
-          <p>
-            Mama Miso is an Asian supermarket and recipe platform where you can
-            discover new ingredients, find easy recipes and shop everything you
-            need by one click, to cook at home.
-          </p>
-        </div>
-
-        <div class="get_in_touch">
-          <h3>Get in touch</h3>
-          <p><strong>Mail: nihao@mamamiso.dk</strong></p>
-          <a href="insta_ikon">
-            <img src="imgs/instaikon.webp" alt="insta_ikon"
-          /></a>
-          <a href="tiktok_ikon">
-            <img src="imgs/tiktokikon.webp" alt="tiktok_ikon"
-          /></a>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
