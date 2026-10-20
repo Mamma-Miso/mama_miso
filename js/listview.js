@@ -76,17 +76,17 @@ function showRecipes(recipes) {
 
           <div class="recipe_details">
             <div class="info">
-              <img src="/imgs/time.svg" alt="Recipe duration" />
+              <img src="imgs/time.svg" alt="Recipe duration" />
               <p>${totalTime} min.</p>
             </div>
 
             <div class="info">
-              <img src="/imgs/rating.svg" alt="Recipe rating" />
+              <img src="imgs/rating.svg" alt="Recipe rating" />
               <p>${recipe.rating}</p>
             </div>
 
             <div class="info">
-              <img src="/imgs/servings.svg" alt="Number of servings" />
+              <img src="imgs/servings.svg" alt="Number of servings" />
               <p>${recipe.servings}</p>
             </div>
           </div>
