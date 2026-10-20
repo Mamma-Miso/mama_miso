@@ -1,96 +1,92 @@
 <!doctype html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categories</title>
+    <meta name="robots" content="noindex" />
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/layout.css" />
-  <link rel="stylesheet" href="/css/categorylist.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/categorylist.css" />
 
-  <script src="/js/categorylist.js" defer></script>
+    <script src="/js/categorylist.js" defer></script>
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lilita+One&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lilita+One&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-</head>
+    <title>Categories</title>
+  </head>
 
-
-<body>
-
-  <header class="site_header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
-      </a>
-    </div>
-    <nav class="main_nav">
-      <div class="menu">
-        <div class="link-img-container supermarketikon">
-          <img src="imgs/supermarketikon.svg" alt="kundkorgikon" />
-          <a href="supermarket.html"> Supermarket</a>
-        </div>
-        <div class="link-img-container recipesikon">
-          <img src="imgs/recipesikon.svg" alt="recipesikon" />
-          <a href="categorylist.html">Recipes</a>
-        </div>
-
-        <div class="link-img-container searchikon">
-          <a href="index.html" aria-label="Search">
-            <img src="imgs/searchikon.svg" alt="" />
-          </a>
-        </div>
-
-        <div class="link-img-container brugereikon">
-          <a href="index.html" aria-label="My profile">
-            <img src="imgs/minprofilikon.svg" alt="" />
-          </a>
-        </div>
-
-        <div class="link-img-container favoritesikon">
-          <a href="index.html" aria-label="Favorites">
-            <img src="imgs/myfavoritesikon.svg" alt="" />
-          </a>
-        </div>
+  <body>
+    <header class="site_header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
+        </a>
       </div>
-    </nav>
+      <nav class="main_nav">
+        <div class="menu">
+          <div class="link-img-container supermarketikon">
+            <img src="imgs/supermarketikon.svg" alt="kundkorgikon" />
+            <a href="supermarket.html"> Supermarket</a>
+          </div>
+          <div class="link-img-container recipesikon">
+            <img src="imgs/recipesikon.svg" alt="recipesikon" />
+            <a href="categorylist.html">Recipes</a>
+          </div>
 
-    <button class="burger" aria-label="Open menu" aria-expanded="false">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </button>
-  </header>
+          <div class="link-img-container searchikon">
+            <a href="index.html" aria-label="Search">
+              <img src="imgs/searchikon.svg" alt="" />
+            </a>
+          </div>
 
+          <div class="link-img-container brugereikon">
+            <a href="index.html" aria-label="My profile">
+              <img src="imgs/minprofilikon.svg" alt="" />
+            </a>
+          </div>
 
+          <div class="link-img-container favoritesikon">
+            <a href="index.html" aria-label="Favorites">
+              <img src="imgs/myfavoritesikon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
 
-  <main class="intro_categorylist">
-    <div class="intro_cat">
-      <div class="intro_cat_text">
-        <h1>MAMA'S CATEGORIES.</h1>
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </header>
 
-        <p>
-          From quick lunches to delicious dinners, sweet treats and refreshing
-          drinks. Explore Mama’s recipe universe, find your next favourite and
-          get all the ingredients by one click. Pick up yourself or get delivered
-          straight to your door.
-        </p>
+    <main class="intro_categorylist">
+      <div class="intro_cat">
+        <div class="intro_cat_text">
+          <h1>MAMA'S CATEGORIES.</h1>
+
+          <p>
+            From quick lunches to delicious dinners, sweet treats and refreshing
+            drinks. Explore Mama’s recipe universe, find your next favourite and
+            get all the ingredients by one click. Pick up yourself or get
+            delivered straight to your door.
+          </p>
+        </div>
+
+        <img class="ikon_recipe" src="imgs/ikon_recipe.png" alt="" />
       </div>
 
-      <img class="ikon_recipe" src="imgs/ikon_recipe.png" alt="">
-    </div>
-
-
-    <section class="grid_categories">
-
-      <!-- <div class="lunch_cat">
+      <section class="grid_categories">
+        <!-- <div class="lunch_cat">
         <a href="lunch.html" class="lunch_card_link">
           <img src="imgs/caterories_menu_img.webp" alt="img af asiatisk mad" />
           <span class="lunch_card_cta">LUNCH</span>
@@ -119,50 +115,57 @@
           <span class="beverage_card_cta">BEVERAGE</span>
         </a>
       </div> -->
+      </section>
 
+      <img
+        class="grafisk_ikon_cat_1"
+        src="imgs/ikon_nudel_bowl.png"
+        alt="grafisk element af en nudel bowl"
+      />
 
+      <img
+        class="grafisk_ikon_cat_2"
+        src="imgs/ikon_spicy.png"
+        alt="grafisk element af et spicy sign"
+      />
+    </main>
 
-    </section>
+    <footer class="footer_content">
+      <div class="footer_left_side">
+        <div>
+          <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
+        </div>
 
-    <img class="grafisk_ikon_cat_1" src="imgs/ikon_nudel_bowl.png" alt="grafisk element af en nudel bowl">
-
-    <img class="grafisk_ikon_cat_2" src="imgs/ikon_spicy.png" alt="grafisk element af et spicy sign">
-
-  </main>
-
-  <footer class="footer_content">
-    <div class="footer_left_side">
-      <div>
-        <img src="imgs/mamamiso-logo-1.svg" alt="mamamisologo" />
+        <div class="footer_contact">
+          <p>Mama Miso</p>
+          <p>Guldbergsgade 22</p>
+          <p>2200 Copenhagen N., Dk</p>
+          <p><strong>Phone: +45 44 66 88 00</strong></p>
+          <p><strong>Opening hours: Mon-Sat 10-18</strong></p>
+        </div>
       </div>
 
-      <div class="footer_contact">
-        <p>Mama Miso</p>
-        <p>Guldbergsgade 22</p>
-        <p>2200 Copenhagen N., Dk</p>
-        <p><strong>Phone: +45 44 66 88 00</strong></p>
-        <p><strong>Opening hours: Mon-Sat 10-18</strong></p>
-      </div>
-    </div>
+      <div class="footer_right_side">
+        <div class="about_us">
+          <h3>About us</h3>
+          <p>
+            Mama Miso is an Asian supermarket and recipe platform where you can
+            discover new ingredients, find easy recipes and shop everything you
+            need by one click, to cook at home.
+          </p>
+        </div>
 
-    <div class="footer_right_side">
-      <div class="about_us">
-        <h3>About us</h3>
-        <p>
-          Mama Miso is an Asian supermarket and recipe platform where you can
-          discover new ingredients, find easy recipes and shop everything you
-          need by one click, to cook at home.
-        </p>
+        <div class="get_in_touch">
+          <h3>Get in touch</h3>
+          <p><strong>Mail: nihao@mamamiso.dk</strong></p>
+          <a href="insta_ikon">
+            <img src="imgs/instaikon.webp" alt="insta_ikon"
+          /></a>
+          <a href="tiktok_ikon">
+            <img src="imgs/tiktokikon.webp" alt="tiktok_ikon"
+          /></a>
+        </div>
       </div>
-
-      <div class="get_in_touch">
-        <h3>Get in touch</h3>
-        <p><strong>Mail: nihao@mamamiso.dk</strong></p>
-        <a href="insta_ikon">
-          <img src="imgs/instaikon.webp" alt="insta_ikon" /></a>
-        <a href="tiktok_ikon">
-          <img src="imgs/tiktokikon.webp" alt="tiktok_ikon" /></a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
+</html>
