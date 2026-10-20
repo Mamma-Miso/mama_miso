@@ -116,6 +116,10 @@ img {
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
 
+  .recipe_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /******* MAMA'S INGREDIENTS DESKTOP ******/
 
   .mamas_ingredients {
@@ -202,6 +206,10 @@ img {
 
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  .supermarket_card_cta:hover {
+    background-color: var(--color-roed);
   }
 
   .index_chinese_sign {
@@ -297,6 +305,10 @@ img {
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
 
+  .recipe_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /******* MAMA'S INGREDIENTS MOBIL ******/
 
   .mamas_ingredients {
@@ -384,6 +396,10 @@ img {
 
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  .supermarket_card_cta:hover {
+    background-color: var(--color-roed);
   }
 
   .index_chinese_sign {

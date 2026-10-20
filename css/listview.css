@@ -47,6 +47,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 40px;
   row-gap: 50px;
+  margin-top: 30px;
 }
 
 .list_card {
@@ -107,7 +108,48 @@
 }
 
 .btn:hover {
-  background-color: #e71d21;
+  background-color: var(--color-roed);
+}
+
+.filter_container .btn:first-child {
+  background-color: var(--color-blaa);
+  cursor: default;
+  margin-right: 10px;
+}
+
+.filter_container .btn:first-child:active {
+  background-color: var(--color-blaa);
+}
+
+.filter_container .btn {
+  font-size: 13px;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.filter_container .btn:active {
+  background-color: var(--color-roed);
+}
+
+.filter_container .btn.selected {
+  background-color: var(--color-roed);
+}
+
+.filter_difficulty,
+.filter_rating,
+.filter_servings {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .decoration {
+    display: none;
+  }
 }
 
 /***************** DESKTOP ****************/
@@ -120,9 +162,41 @@
   .recipe_list_container {
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 350px));
     justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
   }
 
   .beverage_list_container {
     justify-content: space-between;
+  }
+
+  .filter_container .btn {
+    font-size: 1rem;
+  }
+
+  /*********** SMÅ BILLEDER RUNDT PÅ SIDEN ***********/
+
+  .main_content {
+    position: relative;
+  }
+
+  .decoration {
+    position: absolute;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .cabbage {
+    width: 150px;
+    top: 100px;
+    right: 23%;
+  }
+
+  .noodles {
+    width: 150px;
+    right: 10%;
+    bottom: 9%;
+    transform: rotate(20deg);
   }
 }

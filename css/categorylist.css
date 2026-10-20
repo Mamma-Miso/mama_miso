@@ -110,6 +110,10 @@
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
 
+  .lunch_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /*************** DINNER – DESKTOP ***************/
 
   .dinner_cat {
@@ -165,6 +169,11 @@
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
+
+  .dinner_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /*************** DESSERT – DESKTOP ***************/
   .dessert_cat {
     background-color: var(--color-groen);
@@ -218,6 +227,11 @@
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
+
+  .dessert_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /*************** BEVERAGE – DESKTOP ***************/
   .beverage_cat {
     background-color: var(--color-groen);
@@ -272,6 +286,10 @@
 
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  .beverage_card_cta:hover {
+    background-color: var(--color-roed);
   }
 
   /**** GRAFISK ELEMENT ***/
@@ -378,6 +396,10 @@
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
 
+  .lunch_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /*************** DINNER – MOBIL ***************/
 
   .dinner_cat {
@@ -429,6 +451,11 @@
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
+
+  .dinner_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /*************** DESSERT – MOBIL ***************/
   .dessert_cat {
     background-color: var(--color-groen);
@@ -479,6 +506,11 @@
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
   }
+
+  .dessert_card_cta:hover {
+    background-color: var(--color-roed);
+  }
+
   /*************** BEVERAGE – MOBIL ***************/
   .beverage_cat {
     background-color: var(--color-groen);
@@ -528,6 +560,10 @@
 
     border-radius: 50px;
     box-shadow: 0 8px 12px 4px #f9f2e2;
+  }
+
+  .beverage_card_cta:hover {
+    background-color: var(--color-roed);
   }
 
   /**** GRAFISK ELEMENT ***/
