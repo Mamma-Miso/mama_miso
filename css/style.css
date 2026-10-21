@@ -173,6 +173,11 @@ body {
   object-fit: contain;
 }
 
+.site_header .favoritesikon img {
+  width: auto;
+  height: 30px;
+}
+
 /* BURGER SKJULT PÅ DESKTOP */
 .site_header .burger {
   display: none;
@@ -419,6 +424,8 @@ input {
 
 #email {
   width: 75%;
+  height: 30px;
+  padding: 5px;
 }
 
 .popup .submit {
